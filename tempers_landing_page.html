@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempers - Plataforma de Trabalho Temporário</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #0b5ed7; color: white; padding: 20px; text-align: center; }
+        nav { background: #e9ecef; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #0b5ed7; font-weight: bold; }
+        section { padding: 20px; }
+        footer { background: #0b5ed7; color: white; text-align: center; padding: 10px; }
+        form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+        input, textarea, select { padding: 10px; font-size: 1em; }
+        button { padding: 10px; background: #0b5ed7; color: white; border: none; cursor: pointer; }
+        button:hover { background: #084298; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tempers</h1>
+        <p>Conectando empresas a trabalhadores temporários com agilidade e confiança</p>
+    </header>
+    <nav>
+        <a href="#cadastro">Cadastro</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#fale-conosco">Fale Conosco</a>
+    </nav>
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form>
+            <label for="tipo">Sou:</label>
+            <select id="tipo" name="tipo">
+                <option value="empresa">Empresa</option>
+                <option value="trabalhador">Trabalhador</option>
+            </select>
+            <input type="text" placeholder="Nome completo ou razão social" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="text" placeholder="CNPJ" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>A Tempers é uma plataforma pensada para simplificar o processo de contratação temporária. 
+        Nossa missão é conectar empresas a profissionais disponíveis para turnos de trabalho de forma rápida, segura e sem burocracias. 
+        Também oferecemos aos trabalhadores maior autonomia sobre seus horários, atuando com liberdade e praticidade.</p>
+    </section>
+    <section id="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Tempers © 2025 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
